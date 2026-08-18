@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-saas",
+  "version": "0.1.0",
+  "description": "Multi-tenant white-label e-commerce SaaS platform",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r --parallel run build",
+    "lint": "pnpm -r run lint",
+    "type-check": "pnpm -r run type-check",
+    "db:migrate": "node --loader ts-node/esm scripts/migrate-all-tenants.ts",
+    "db:seed": "node --loader ts-node/esm scripts/dev-seed.ts",
+    "postgres:start": "docker-compose up -d postgres",
+    "postgres:stop": "docker-compose down",
+    "postgres:reset": "docker-compose down -v && docker-compose up -d postgres"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0"
+  }
+}

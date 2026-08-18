@@ -1,0 +1,23 @@
+{
+  "name": "@ecommerce/db-control-plane",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "migrations"],
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@ecommerce/shared-types": "workspace:*",
+    "pg": "^8.11.0",
+    "node-pg-migrate": "^6.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.11.0",
+    "typescript": "^5.4.0"
+  }
+}

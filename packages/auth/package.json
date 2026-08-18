@@ -1,0 +1,24 @@
+{
+  "name": "@ecommerce/auth",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@ecommerce/shared-types": "workspace:*",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.1.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
