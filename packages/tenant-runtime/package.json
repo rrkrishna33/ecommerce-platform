@@ -11,6 +11,7 @@
     "dev": "tsc --watch"
   },
   "dependencies": {
+    "@ecommerce/db-tenant": "workspace:*",
     "@ecommerce/shared-types": "workspace:*",
     "lru-cache": "^10.1.0",
     "pg": "^8.11.0"

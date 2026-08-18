@@ -12,8 +12,7 @@
   },
   "dependencies": {
     "@ecommerce/shared-types": "workspace:*",
-    "pg": "^8.11.0",
-    "node-pg-migrate": "^6.6.0"
+    "pg": "^8.11.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

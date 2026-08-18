@@ -13,7 +13,7 @@
   "dependencies": {
     "@ecommerce/shared-types": "workspace:*",
     "bcrypt": "^5.1.0",
-    "jsonwebtoken": "^9.1.0"
+    "jsonwebtoken": "^9.0.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",

@@ -5,6 +5,7 @@ export interface Tenant {
   subdomain: string;
   customDomain: string | null;
   dbHost: string;
+  dbPort: number;
   dbName: string;
   dbUser: string;
   dbPassword: string;
@@ -47,6 +48,28 @@ export interface Customer {
   email: string;
   passwordHash: string;
   name: string;
+  createdAt: Date;
+}
+
+// Category
+export interface Category {
+  id: string;
+  name: string;
+  slug: string;
+  parentId: string | null;
+  createdAt: Date;
+}
+
+// Address
+export interface Address {
+  id: string;
+  customerId: string;
+  line1: string;
+  line2: string | null;
+  city: string;
+  state: string;
+  postalCode: string;
+  country: string;
   createdAt: Date;
 }
 
